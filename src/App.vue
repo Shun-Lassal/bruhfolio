@@ -290,7 +290,7 @@ const changeProject = (direction) => {
       >
         <img
           class="h-full w-full absolute rounded-tr-3xl rounded-br-3xl border border-dark-50"
-          src="src/assets/photo2.jpeg"
+          src="./assets/photo2.jpeg"
           alt=""
         />
         <div
