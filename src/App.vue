@@ -6,7 +6,8 @@ import projectCardView from "./components/projectCardView.vue";
 // import anime from "animejs";
 const showPage = ref("home");
 const showProject = ref(0);
-
+const MyBourse = "src/assets/Mybourse.png";
+console.log();
 const changeProject = (direction) => {
   console.log("working", direction);
   if (direction === -1) {
@@ -202,7 +203,7 @@ const changeProject = (direction) => {
           <div class="bg-black" v-auto-animate>
             <projectCardView
               v-if="showProject === 0"
-              imageUrl="@/assets/Mybourse.png"
+              imageUrl="/MyBourse.png"
               ProjectTitle="MyBourse"
               ProjectDesc="MyBourse is an app that allows you to create or join the wallet of your friends, you can visualise and manage your budget with customisables icons and colors!"
             >
