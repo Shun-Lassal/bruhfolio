@@ -6,6 +6,7 @@ import projectCardView from "./components/projectCardView.vue";
 // import anime from "animejs";
 const showPage = ref("home");
 const showProject = ref(0);
+const bubbleShown = ref(false);
 const MyBourse = "src/assets/Mybourse.png";
 console.log();
 const changeProject = (direction) => {
@@ -278,19 +279,35 @@ const changeProject = (direction) => {
     </button>
     <div class="w-full h-full flex <lg:(flex-col) justify-center items-center">
       <div
-        class="lg:(h-96) <lg:(hidden justify-center) w-lg relative flex flex-col items-start"
+        class="lg:(h-96) <lg:(hidden justify-center) w-lg relative flex flex-col items-start overflow-hidden"
       >
         <img
           class="h-full w-full absolute rounded-tr-3xl rounded-br-3xl border border-dark-50"
           src="./assets/photo2.jpeg"
           alt=""
         />
+        <img
+          class="h-full absolute rounded-tr-3xl rounded-br-3xl border-dark-50 right-5 top-30 hover:(transform-gpu -translate-y-20) duration-500"
+          src="./assets/sujet.png"
+          alt=""
+          @click="bubbleShown ? (bubbleShown = false) : (bubbleShown = true)"
+        />
         <div
-          class="h-full w-full rounded-tr-3xl rounded-br-3xl bg-gradient-to-r from-black to-transparent absolute opacity-100"
+          class="h-full w-full rounded-tr-3xl rounded-br-3xl bg-gradient-to-r from-black to-transparent absolute opacity-100 pointer-events-none"
         ></div>
+        <div
+          class="absolute top-0 right-0 left-0 bottom-0 pointer-events-none"
+          v-auto-animate
+        >
+          <span
+            v-if="bubbleShown === true"
+            class="absolute font-semibold right-50 top-30 p-5 w-70 rounded-10xl bg-white bg-opacity-50 duration-500 cursor-pointer"
+            >Hmm... Are they gonna call me for a job ?</span
+          >
+        </div>
       </div>
       <div
-        class="h-full w-50 flex flex-col justify-center items-center lg:(ml-9) <lg:(ml-0)"
+        class="h-full w-50 flex flex-col justify-center items-center lg:(ml-9) <lg:(ml-0 mb-4)"
       >
         <div class="h-full flex flex-col justify-evenly items-center">
           <div
@@ -383,7 +400,9 @@ const changeProject = (direction) => {
           >
         </div>
       </div>
-      <div class="w-lg flex flex-col items-end <lg:(items-center) container">
+      <div
+        class="w-lg flex flex-col items-end <lg:(items-center w-0) container"
+      >
         <div
           class="border border-gray-400 p-6 <lg:(p-4 w-sm) rounded-lg w-md h-full bg-dark-900"
         >
