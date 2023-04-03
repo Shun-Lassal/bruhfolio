@@ -202,66 +202,66 @@ const changeProject = (direction) => {
           <div class="bg-black" v-auto-animate>
             <projectCardView
               v-if="showProject === 0"
-              imageUrl="src/assets/Mybourse.png"
+              imageUrl="./assets/Mybourse.png"
               ProjectTitle="MyBourse"
               ProjectDesc="MyBourse is an app that allows you to create or join the wallet of your friends, you can visualise and manage your budget with customisables icons and colors!"
             >
               <devIconView
                 name="Javascript"
-                imageUrl="src/assets/javascript.png"
+                imageUrl="./assets/javascript.png"
               />
-              <devIconView name="Vite" imageUrl="src/assets/vitejs.png" />
-              <devIconView name="VueJS" imageUrl="src/assets/vuejs.png" />
-              <devIconView name="WindiCSS" imageUrl="src/assets/windicss.png" />
+              <devIconView name="Vite" imageUrl="./assets/vitejs.png" />
+              <devIconView name="VueJS" imageUrl="./assets/vuejs.png" />
+              <devIconView name="WindiCSS" imageUrl="./assets/windicss.png" />
               <devIconView
                 name="Pinia"
-                imageUrl="src/assets/pinia.svg"
+                imageUrl="./assets/pinia.svg"
                 :scaleIcon="true"
               />
-              <devIconView name="Strapi" imageUrl="src/assets/strapi.png" />
+              <devIconView name="Strapi" imageUrl="./assets/strapi.png" />
             </projectCardView>
 
             <projectCardView
               v-if="showProject === 1"
-              imageUrl="src/assets/LOClassic.png"
+              imageUrl="./assets/LOClassic.png"
               ProjectTitle="LO Classic"
               ProjectDesc="Landing page of a Last Oasis server I used to play on, it was supposed to be a whole website but it didn't concretised into a big project!"
             >
               <devIconView
                 name="Javascript"
-                imageUrl="src/assets/javascript.png"
+                imageUrl="./assets/javascript.png"
               />
-              <devIconView name="Vite" imageUrl="src/assets/vitejs.png" />
-              <devIconView name="VueJS" imageUrl="src/assets/vuejs.png" />
-              <devIconView name="WindiCSS" imageUrl="src/assets/windicss.png" />
+              <devIconView name="Vite" imageUrl="./assets/vitejs.png" />
+              <devIconView name="VueJS" imageUrl="./assets/vuejs.png" />
+              <devIconView name="WindiCSS" imageUrl="./assets/windicss.png" />
             </projectCardView>
 
             <projectCardView
               v-if="showProject === 2"
-              imageUrl="src/assets/13thGames.png"
+              imageUrl="./assets/13thGames.png"
               ProjectTitle="13th Games.io"
               ProjectDesc="Ones of my first projects using APIs, 13thGames.io is a website that fetches all the games from Rawg.io database, you can search games by titles, genres and platforms !"
             >
               <devIconView
                 name="Javascript"
-                imageUrl="src/assets/javascript.png"
+                imageUrl="./assets/javascript.png"
               />
-              <devIconView name="Vite" imageUrl="src/assets/vitejs.png" />
-              <devIconView name="VueJS" imageUrl="src/assets/vuejs.png" />
-              <devIconView name="WindiCSS" imageUrl="src/assets/windicss.png" />
+              <devIconView name="Vite" imageUrl="./assets/vitejs.png" />
+              <devIconView name="VueJS" imageUrl="./assets/vuejs.png" />
+              <devIconView name="WindiCSS" imageUrl="./assets/windicss.png" />
               <devIconView
                 name="Pinia"
-                imageUrl="src/assets/pinia.svg"
+                imageUrl="./assets/pinia.svg"
                 :scaleIcon="true"
               />
             </projectCardView>
             <projectCardView
               v-if="showProject === 3"
-              imageUrl="src/assets/joystick.png"
+              imageUrl="./assets/joystick.png"
               ProjectTitle="Godot Virtual Joystick"
               ProjectDesc="Simple Virtual Joystick I made, that I will use for my futures mobile godot projects! You can download it on my github for free!"
             >
-              <devIconView name="Godot" imageUrl="src/assets/godot.svg" />
+              <devIconView name="Godot" imageUrl="./assets/godot.svg" />
             </projectCardView>
           </div>
         </projectHolderView>
