@@ -310,7 +310,9 @@ const changeProject = (direction) => {
         class="h-full w-50 flex flex-col justify-center items-center lg:(ml-9) <lg:(ml-0 mb-4)"
       >
         <div class="h-full flex flex-col justify-evenly items-center">
-          <div
+          <a
+            href="https://github.com/Shun-Lassal/"
+            target="_blank"
             class="group flex flex-col justify-center items-center cursor-pointer"
           >
             <svg
@@ -329,8 +331,10 @@ const changeProject = (direction) => {
               class="text-black font-bold group-hover:(text-gray-400) duration-500"
               >Github</span
             >
-          </div>
-          <div
+          </a>
+          <a
+            href="https://www.linkedin.com/in/shun-lassal-56a402217/"
+            target="_blank"
             class="group flex flex-col justify-center items-center cursor-pointer"
           >
             <svg
@@ -351,8 +355,10 @@ const changeProject = (direction) => {
                 >In</span
               ></span
             >
-          </div>
-          <div
+          </a>
+          <a
+            href="https://www.malt.fr/profile/shunlassal"
+            target="_blank"
             class="group flex flex-col justify-center items-center cursor-pointer"
           >
             <div
@@ -393,7 +399,7 @@ const changeProject = (direction) => {
               class="text-black font-bold group-hover:(text-gray-400) duration-500"
               >Malt</span
             >
-          </div>
+          </a>
           <span
             class="select-none text-dark-300 text-2xl transition-all duration-500 hover:(text-gray-200) children:(text-dark-300 transition-all duration-500) children:hover:(text-purple-600) cursor-pointer"
             >13<span class="font-semibold tracking-tighter">DEV</span></span
