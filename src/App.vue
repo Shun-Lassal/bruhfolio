@@ -407,52 +407,15 @@ const changeProject = (direction) => {
         </div>
       </div>
       <div
-        class="w-lg flex flex-col items-end <lg:(items-center w-0) container"
+        class="w-lg flex flex-col items-center <lg:(items-center w-0) container"
       >
-        <div
-          class="border border-gray-400 p-6 <lg:(p-4 w-sm) rounded-lg w-md h-full bg-dark-900"
-        >
-          <div class="mb-2">
-            <h3 class="text-gray-200 text-2xl font-bold">Contact-me !</h3>
-            <span class="text-gray-400">(I swear it works)</span>
-          </div>
-          <div class="space-y-4">
-            <div class="flex flex-col">
-              <label class="text-gray-200 font-semibold" for="name">Nom:</label>
-              <input
-                class="border border-dark-600 bg-black outline-none text-gray-200 p-1"
-                type="text"
-                name="name"
-              />
-            </div>
-            <div class="flex flex-col">
-              <label class="text-gray-200 font-semibold" for="mail"
-                >E-mail:</label
-              >
-              <input
-                class="border border-dark-600 bg-black outline-none text-gray-200 p-1"
-                type="email"
-                name="mail"
-              />
-            </div>
-            <div class="flex flex-col">
-              <label class="text-gray-200 font-semibold" for="msg"
-                >Message:</label
-              >
-              <textarea
-                class="border border-dark-600 bg-black outline-none text-gray-200 p-1 resize-none"
-                name="msg"
-                rows="8"
-              ></textarea>
-            </div>
-            <div class="flex justify-center items-center">
-              <button
-                class="py-4 px-8 rounded border bg-black text-gray-200 font-bold hover:(bg-dark-500)"
-              >
-                Envoyer
-              </button>
-            </div>
-          </div>
+        <div class="flex flex-col justify-center items-center">
+          <span class="font-bold text-xl text-gray-200 mb-10"
+            >Send me a mail!</span
+          >
+          <span class="text-dark-100 select-text mb-10"
+            >lassal.shun@gmail.com</span
+          >
         </div>
       </div>
     </div>
