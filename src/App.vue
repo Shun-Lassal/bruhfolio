@@ -435,6 +435,7 @@ const changeProject = (direction) => {
 </template>
 
 <style>
+
 body {
   background-color: black;
   overflow: hidden;
