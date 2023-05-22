@@ -185,7 +185,7 @@ const changeProject = (direction) => {
   </Transition>
   <Transition name="projects" mode="in-out">
     <div
-      class="absolute top-0 bottom-0 left-0 right-0 -z-1 h-screen flex flex-col justify-between items-center bg-black select-none overflow-y-scroll"
+      class="absolute top-0 bottom-0 left-0 right-0 -z-1 h-screen flex flex-col justify-evenly items-center bg-black select-none overflow-y-scroll"
       v-if="showPage == 'projects'"
       v-auto-animate
     >
@@ -435,7 +435,6 @@ const changeProject = (direction) => {
 </template>
 
 <style>
-
 body {
   background-color: black;
   overflow: hidden;
